@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "PT Sans", sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid black 2px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar__title {
+    color: rgb(144, 54, 228);
+    font-size: 50px;
+}
+
+.navbar__input {
+    border: none;
+    width: 550px;
+}
+
+.navbar__input:focus {
+    outline: none;
+}
+
+.navbar__search {
+    border: solid black 1px;
+    height: 30px;
+    width: 600px;
+    border-radius: 30px;
+    align-items: center;
+}
+
+.navbar__desc {
+
+    font-size: 20px;
+}
+
+.navbar__icon {
+
+    padding-right: 40px;
+    gap: 50px;
+}
+
+.navbar__searchicon {
+    padding: 10px;
+}
+
+.category {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: solid black 1px;
+    padding: 10px;
+}
+
+.category__element {
+    color: honeydew;
+    background-color: rgb(144, 54, 228);
+    padding: 12px;
+    border-radius: 20px;
+}
+
+.category__element:hover {
+    cursor: pointer;
+    background-color: rgb(104, 39, 166);
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+}
+
+.recommended {
+    padding-left: 10px;
+    padding-top: 40px;
+}
+
+.courses {
+    flex-wrap: wrap;
+}
+
+.course__ele {
+    height: 270px;
+    width: 280px;
+    border: solid black 3px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+}
+
+.course__img {
+    height: 150px;
+    width: 200px;
+    padding-left: 40px;
+}
+
+.courses {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.course__elebutton {
+    margin-top: 5px;
+    padding: 5px;
+    background-color: rgb(144, 54, 228);
+    color: white;
+    border: transparent;
+    margin-left: 90px;
+    margin-bottom: 10   px;
+}
+
+.course__elebutton:hover {
+    cursor: pointer;
+    background-color: rgb(104, 39, 166);
+}
+
+.topics__title {
+    padding: 10px;
+}
+
+.topics__container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.topics__container p {
+    border: solid gray 1px;
+    padding: 10px;
+    flex-grow: 1;
+    flex-basis: 25%
+}
+
+.popular {
+    padding: 10px;
+}
+
+.popular__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px
+}
+.footer__1{
+    display: flex;
+    gap: 30px;
+}
+
+.footer__2{
+    display: flex;
+    justify-content: space-between;
+    text-align: bottom;
+    margin-left: 20px;
+}
+
+.footer{
+    background-color: black;
+    margin-top: 40px;
+    color: white
+}
+
+.footer__1 h5{
+    margin: 20px;
+}
+.footer__2 h1{
+    font-size: 45px;
+}
+
