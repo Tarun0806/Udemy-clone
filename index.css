@@ -85,11 +85,13 @@ body {
     background-color: rgb(144, 54, 228);
     padding: 12px;
     border-radius: 20px;
+    border: solid rgb(144, 54, 228) 1px;
 }
 
 .category__element:hover {
     cursor: pointer;
-    background-color: rgb(104, 39, 166);
+    background-color: white;
+    color: black;
 }
 
 .img {
@@ -107,6 +109,27 @@ body {
     height: 180px;
     width: 400px;
     padding: 25px;
+    border: 1px solid black;
+    border-radius: 20px;
+    animation-name: offer__popup;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes offer__popup {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.img__offer:hover{
+
 }
 
 .img__offer p{
@@ -161,6 +184,7 @@ body {
 .course__elebutton:hover {
     cursor: pointer;
     background-color: rgb(104, 39, 166);
+    
 }
 
 .topics__title {
