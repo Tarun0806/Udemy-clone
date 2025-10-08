@@ -149,46 +149,63 @@ body {
 
 }
 
-.course__ele {
-    height: 270px;
-    width: 100px;
-    border: solid black 3px;
-    border-radius: 20px;
-    padding: 20px;
-    background-color: black;
-    color: white;
-    margin-top: 10px;
-    flex-grow: 1;
-    flex-basis: 20%;
-    margin: 5px;
-}
-
-.course__img {
-    height: 150px;
-    width: 200px;
-    padding-left: 40px;
-}
-
 .courses {
     display: flex;
     justify-content: space-around;
 
 }
 
-.course__elebutton {
-    margin-top: 5px;
-    padding: 5px;
-    background-color: rgb(144, 54, 228);
+.courses {
+    background-color: #f1f1f1;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space around;
+    align-items: center;
+    height: auto;
+    padding: 20px;
+}
+
+.course__ele {
+    background-color: #000;
     color: white;
-    border: transparent;
-    margin-left: 90px;
-    margin-bottom: 10 px;
+    width: 300px;
+    border-radius: 20px;
+    height: 70%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    text-align: left;
+}
+
+.course__img {
+    width: 100%;
+    height: 55%;
+    border-radius: 10px;
+}
+
+.course__ele h4 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.course__ele p {
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+.course__elebutton {
+    background-color: #a020f0;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
 }
 
 .course__elebutton:hover {
-    cursor: pointer;
-    background-color: rgb(104, 39, 166);
-
+    background-color: #8000c9;
 }
 
 .topics__title {
@@ -218,6 +235,9 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 10px
+    width: 100%
+    height: auto;
+    padding: 20px;
 }
 
 .footer__1 {
@@ -254,9 +274,9 @@ body {
 
 }
 
-@media screen and (max-width: 500px;) {
+@media screen and (max-width: 500px; ) {
     .courses__ele {
         flex-basis: 40%;
-        
+        w
     }
 }
