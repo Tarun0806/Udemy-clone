@@ -170,7 +170,7 @@ body {
     color: white;
     width: 300px;
     border-radius: 20px;
-    height: 70%;
+    height: 370px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     text-align: left;
@@ -234,9 +234,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 10px
-    width: 100%
-    height: auto;
+    gap: 15px;
     padding: 20px;
 }
 
