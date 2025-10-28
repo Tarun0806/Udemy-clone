@@ -27,13 +27,12 @@ body {
 .navbar__search {
     display: flex;
     align-items: center;
-    /* centers icon vertically */
     border: 1px solid #ccc;
     border-radius: 25px;
     padding: 5px 10px;
     width: 500px;
     height: 40px;
-    /* define height */
+
 }
 
 .navbar__search input {
@@ -171,7 +170,11 @@ body {
     width: 300px;
     border-radius: 20px;
     height: 370px;
+    flex-grow: 1;
+    flex-basis: 20%;
     padding: 20px;
+    margin: 5px;
+    gap: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     text-align: left;
 }
@@ -206,6 +209,22 @@ body {
 
 .course__elebutton:hover {
     background-color: #8000c9;
+    animation: bounce 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
 }
 
 .topics__title {
@@ -272,9 +291,8 @@ body {
 
 }
 
-@media screen and (max-width: 500px; ) {
-    .courses__ele {
+@media screen and (max-width: 500px) {
+    .course__ele {
         flex-basis: 40%;
-        w
     }
 }
